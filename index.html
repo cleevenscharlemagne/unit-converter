@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main_container">
+      <h1>Unit Converter</h1>
+      <p class="description">Convert between different units of measurement.</p>
+
+      <h4>Select Category</h4>
+      <select id="categorySelect">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+      </select>
+
+      <div class="converter_container">
+        <h2 id="dynamicTitle">Length</h2>
+
+        <input type="number" id="inputValue" placeholder="Enter value" />
+
+        <select id="inputUnit"></select>
+
+        <select id="outputUnit"></select>
+
+        <button id="convertButton">Convert</button>
+
+        <div class="result">
+          <p>Result: 1.00<span id="result"></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="converter.js"></script>
+  </body>
+</html>

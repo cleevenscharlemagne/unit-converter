@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* mobile tap flash */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* more thorough version */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #80e0da, #eaa3a3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main_container {
+  background: linear-gradient(
+    to bottom,
+    rgba(221, 245, 249, 0.228),
+    rgba(176, 151, 198, 0.4)
+  );
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.converter_container {
+  border-radius: 15px;
+  gap: 20px;
+  background: rgba(240, 135, 135, 0.8);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.result {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #333;
+  background: rgba(235, 232, 232, 0.553);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.converter_container select,
+.converter_container input {
+  padding: 10px;
+  margin: 5px;
+  background: rgba(235, 232, 232, 0.553);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.converter_container button {
+  padding: 10px 20px;
+  background: #d5c728;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.converter_container button:hover {
+  background: #c1a21e;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+.converter_container h2 {
+  margin-bottom: 15px;
+}
+
+.main_container h1 {
+  margin-bottom: 10px;
+}
+
+.main_container .description {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.main_container select {
+  padding: 10px;
+  margin: 5px;
+  background: rgba(249, 247, 247, 0.653);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
